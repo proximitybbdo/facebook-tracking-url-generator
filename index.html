@@ -1,0 +1,77 @@
+<!doctype html>
+<!--[if IE 7]> <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="ProximityBBDO" />
+    <meta name="author" content="ProximityBBDO" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FB Tracking link converter</title>
+
+    <link rel="shortcut icon" href="" />
+    <link rel="apple-touch-icon" href="" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <h2>Facebook Tracking Link Generator</h2>
+
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Tracking parameters</legend>
+          <div class="control-group">
+            <label class="control-label" for="source">Source</label>
+            <div class="controls">
+              <input type="text" id="source" placeholder="utm_source">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="medium">Medium</label>
+            <div class="controls">
+              <input type="text" id="medium" placeholder="utm_medium">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="campaign">Campaign</label>
+            <div class="controls">
+              <input type="text" id="campaign" placeholder="utm_campaign">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="url">Application URL</label>
+            <div class="controls">
+              <input type="text" id="url" class='input-xxlarge' placeholder="https://www.facebook.com/DavitamonBelgium/app_470864302980363">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <div class="controls">
+              <button type="submit" class="btn btn-primary btn-large">Create Tracking URL</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="progress progress-striped active" style="display: none">
+        <div class="bar" style="width: 40%;"></div>
+      </div>
+
+      <input class="input-xlarge uneditable-input" style="width: 95%; padding: 30px; font-size: 20px; cursor: default; display: none;" id="result" onclick="this.select()" />
+    </div>
+
+    <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/main.min.js"></script>
+  </body>
+</html>
+
+
